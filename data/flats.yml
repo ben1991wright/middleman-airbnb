@@ -33,10 +33,10 @@ killercarwash:
   city_slug: "berlin"
   wifi: false
   rating: 5
-# amresh12:
-#   name: Amresh's home
-#   description: Rundown shack in Berlin
-#   city_name: "Berlin, Germany"
-#   city_slug: "berlin"
-#   wifi: false
-#   rating: 5
+amresh12:
+  name: Amresh's home
+  description: Palatial estate in Colombo
+  city_name: "Colombo, Sri Lanka"
+  city_slug: "colombo"
+  wifi: true
+  rating: 2
