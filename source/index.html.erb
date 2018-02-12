@@ -4,23 +4,23 @@ title: Le Wagon - Middleman
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/london');">
   <div class="banner-content">
     <h1>What's actually meant to be here?</h1>
-    <p>Seriously what?</p>
+    <p>Seriously, what?</p>
     <a class="btn btn-primary btn-lg">Click here and nothing will happen.</a>
   </div>
 </div>
 
 <div class="container text-center">
   <div class="row">
-    <% ["london", "paris", "shanghai"].each do |city| %>
+    <% data.flats.each do |user, infos| %>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://kitt.lewagon.com/placeholder/cities/<%= city %>');">
-          <div class="card-category">Cities!</div>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://kitt.lewagon.com/placeholder/cities/<%= infos.city_slug %>');">
+          <div class="card-category"><%= infos.city_name %></div>
           <div class="card-description">
-            <h2>Le Wagon <%= city.capitalize %></h2>
-            <p>Very cool city, the best</p>
+            <h2><%= infos.name %></h2>
+            <p><%= infos.description %></p>
           </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-          <a class="card-link" href="#" ></a>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/<%= user %>">
+          <a class="card-link" href="/flats/<%= user %>.html" ></a>
         </div>
       </div>
     <% end %>

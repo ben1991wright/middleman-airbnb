@@ -1,0 +1,57 @@
+.flat-banner {
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+.info {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar-flat {
+  height: 70px;
+  width: 70px;
+  margin-top: 0px;
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 0px
+}
+
+.left-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-info {
+  width: 300px;
+}
+
+.user {
+  margin: 0 12px;
+}
+
+.location {
+  p {
+    opacity: 0.6;
+    font-size: 17px;
+  }
+  .fa-star {
+    color: #FFB23C;
+    opacity: 1;
+  }
+}
+
+.booking {
+  background-color: white;
+  padding: 20px;
+  input {
+    width: 100%;
+  }
+}
