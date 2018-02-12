@@ -1,0 +1,8 @@
+<ul class="list-inline text-center">
+  <% ["killercarwash", "ben1991wright"].each do |user| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user}", class: "img-circle avatar" %>
+      <h3><%= user.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
